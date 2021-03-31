@@ -21,7 +21,6 @@ out = nan;
 try
     descr = getTag(tiff,'ImageDescription');
 catch
-    disp('Could not get "ImageDescription" tag in Tiff file');
     return
 end
 
