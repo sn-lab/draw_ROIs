@@ -14,7 +14,7 @@ function out = read_tiffstate(tiff,statename)
 %e.g.
 %tiff = Tiff('C:/image.tif','r');
 %fps = read_tiffstate(tiff,'framerate');
-
+warning('off','imageio:tiffmexutils:libtiffWarning');
 out = nan;
 
 %get entire "ImageDescription" string using the matlab Tiff library
