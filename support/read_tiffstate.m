@@ -27,7 +27,7 @@ end
 %find the desired state
 name_ind = strfind(descr,statename);
 if isempty(name_ind)
-    disp(['Could not find "' statename '" in Tiff file ImageDescription tag'])
+%     disp(['Could not find "' statename '" in Tiff file ImageDescription tag'])
     return
 end
 
