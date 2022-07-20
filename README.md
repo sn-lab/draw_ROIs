@@ -1,8 +1,11 @@
 # draw_ROIs
  Matlab app for manually drawing ROIs (regions of interest) and extracting traces of mean pixel intensity values within those ROIs from scanimage .tif files
 
-DEPENDENCIES: Image Processing Toolbox
+DEPENDENCIES: 
+* Image Processing Toolbox
+* Statistics and Machine Learning Toolbox
 
+##
 ROIs are commonly used to identify spatial subsets of an image series in order to calculate how the mean intensity of all pixels within that region changes throughtout the image series. This app simplifies the process for identifying and drawing these ROIs.
 
 The app can either be run directly or called as a function from other Matlab scripts. When ran directly or called as a function with no inputs (e.g. "draw_ROIs()"), the "draw_ROIs" app will open with only the "Load Image Series" button visible, prompting the user to select an image file located in their file system for drawing ROIs. Alternatively, an image file can be passed into the app as an input, bypassing the need for the user to select a file after the app has loaded. An image file can be passed into the function as either an image matrix already loaded in the matlab workspace (e.g. "draw_ROIs(image_series)") or as a file directory pointing to a .tif image file (e.g. "draw_ROIs('C:/image.tif')").
