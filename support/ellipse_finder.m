@@ -82,7 +82,7 @@ for e = 1:numEllipses %loop for every potential ellipse
 end
 
 %sort potential ellipses by max brightness
-centerBrightnesses = image(sub2ind([512 512],brightCenter(:,2),brightCenter(:,1)));
+centerBrightnesses = image(sub2ind([imageH imageW],brightCenter(:,2),brightCenter(:,1)));
 [~,sort_order] = sort(centerBrightnesses,'descend');
 brightCenter = brightCenter(sort_order,:);
 
