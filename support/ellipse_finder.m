@@ -10,7 +10,7 @@ function varargout = ellipse_finder(varargin)
 %image: filename of tif image file (only the 1st frame will be read),
 %       or a 2-D greyscale image matrix
 %diameter: estimated diameter of ellipses to detect
-% (if not all 3 inputs are supplied, the user will be prompted to add them)
+% (if not all inputs are supplied, the user will be prompted to add them)
 %
 %OPTIONAL OUTPUT:
 %rois: struct containing polygon vertices, centers, and parameters (e.g. 
